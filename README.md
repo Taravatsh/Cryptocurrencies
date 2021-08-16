@@ -56,5 +56,6 @@ In this part of the project Plotly Express and **hvplot** was used for visualzin
 
 ![Scatter Plot]()
 
-### Visualiz
 ## Summary
+
+In conclusion, cryptocurencies were grouped together using KMeans clustering algorithm after preprocessing the data to fit the unsupoervised machine learning model. Hence, creating an analysis for the clients who are looking forward to get into the cryptocurrency market.
