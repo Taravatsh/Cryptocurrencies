@@ -16,7 +16,7 @@ This section of the project focuses on the results achieved after processing the
 
 ### Preprocessing the Data for PCA 
 
-In this part of the project, the data on the cryptocurrencies that was retrieved as a csv file from [CryptoCompare]() was preprocessed by performing the following:
+In this part of the project, the data on the cryptocurrencies that was retrieved as a csv file from [CryptoCompare](https://min-api.cryptocompare.com/data/all/coinlist) was preprocessed by performing the following:
 
 - Keeping the cryptocurrencies that were being traded.
 - Dropping the **IsTrading** column.
@@ -25,37 +25,37 @@ In this part of the project, the data on the cryptocurrencies that was retrieved
 
 Figure below illustrates the **crypto_df** after performing the aforementioned preprocessing steps.
 
-![Crypto DataFrame]()
+![Crypto DataFrame](Images/Crypto_DF.png)
 
 Additionlly, the text features of the data were transformed into numerical data type using the **get_dummies()** method as depicted in the figure below.
-![Transforming features]()
+![Transforming features](Images/X_DF.png)
 
 ### Reducing Data Dimensions using PCA
 
 In this section of the project, Principal Component Analysis (PCA) algorithm, was performed for reducing the number of dimensions to only three principal components to prevent overfitting the data as demonstarted in the figure below.
 
-![Reducing Data Dimensions]()
+![Reducing Data Dimensions](Images/Pcs_DF.png)
 
 ### Clustering Cryptocurrencies using K-means
 
 In this section of the project, knowledge of K-means algorithm was used for creating an elbow curve using **hvplot** for finding the best K value as illustrated in the plot below.
 
-![Elbow Curve]()
+![Elbow Curve](Images/Elbow_Curve.png)
 
 Looking at the elbow curve, the k value of 3 was selected since that is the point where the vertical direction shifts to a strong horizontal direction. Hence, the KMeans algorithm was then initialized for making predictions of the K-clusters for the cryptocurrencies' data and a new clustered DataFrame was created as illustrated in the figure below.
 
-![Clustered DataFrame]()
+![Clustered DataFrame](Images/Clustered_DF.png)
 
 ### Visualizing Cryptocurrencies Results
 
 In this part of the project Plotly Express and **hvplot** was used for visualzing the distinct groups that corresponded to the three principal components created. Additionally, a table showing the tradabke cryptocurrencies was created using **hvplot.table()** as shown in the figure below.
 
-![Tradable Cryptocurrencies]()
+![Tradable Cryptocurrencies](Images/Tradable_Cryptocurrencies.png)
 
  The scatter plot is illustrated in the figure below.
 
-![Scatter Plot]()
+![Scatter Plot](Images/Scatter_Plot.png)
 
 ## Summary
 
-In conclusion, cryptocurencies were grouped together using KMeans clustering algorithm after preprocessing the data to fit the unsupoervised machine learning model. Hence, creating an analysis for the clients who are looking forward to get into the cryptocurrency market.
+In conclusion, cryptocurencies were grouped together using KMeans clustering algorithm after preprocessing the data to fit the unsupoervised machine learning model. Hence, by this way we were able to create an analysis for the clients who are looking forward to get into the cryptocurrency market.
