@@ -41,7 +41,7 @@ In this section of the project, knowledge of K-means algorithm was used for crea
 
 ![Elbow Curve](Images/Elbow_Curve_Plot.png)
 
-Looking at the elbow curve , the k value of 3 was selected since that is the point where the vertical direction shifts to a strong horizontal direction. Hence, the KMeans algorithm was then initialized for making predictions of the K-clusters for the cryptocurrencies' data and a new DataFrame was created as illustrated in the figure below.
+Looking at the elbow curve , the k value of 4 was selected since that is the point where the vertical direction shifts to a strong horizontal direction. Hence, the KMeans algorithm was then initialized for making predictions of the K-clusters for the cryptocurrencies' data and a new DataFrame was created as illustrated in the figure below.
 
 ![Clustered DataFrame](Images/Clustered_DataFrame.png)
 
